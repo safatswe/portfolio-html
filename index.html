@@ -17,17 +17,34 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
       <style>
         body{
-            background-color: bisque;
+           
             font-family: "Roboto", sans-serif;
+            background-image:url('ritu.jpg') ;
+            background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
         }
+        form{
+          color: rgb(180, 248, 8);
+        }
+        a{
+            
+           color:rgb(50, 3, 179)
+            
+          
+        }
+      
+       
+       
+        
       </style>
 </head>
 <body>
     <nav>
         <ul>
             <li> <a  href="index.html" target="_self" title="visite home page">Home</a></li>
-            <li><a href="contact.html" target="_self" title="visite contact page">Contact-number</a></li>
+            <li><a href="contact.html" target="_self" title="visite contact page">Contact-number</a>☎</li>
         </ul>
        
     </nav>
@@ -47,22 +64,22 @@
     </nav>
    
     <header>
- <h1>Safiul Hasan Safat</h1>
+ <h1>✰Safiul Hasan Safat✰</h1>
  <img src="./safat.jpg" alt="" height="200">
- <p><em>Student of software engineering</em></p>
+ <p><strong><em>Student of software engineering</em></strong></p>
 </header>
 <hr/>
 <section id="about" >
 
-<h2>About me</h2>
+<h2 style="color: rgb(243, 247, 241);">About me</h2>
 
-    <p>
-      <strong>Education:</strong> bsc in swe,sust
+    <p style="color: aqua;">
+      <strong>🎓Education:</strong> bsc in swe,sust
     </p>
 </section>
-<section id="skill">
+<section style="color: rgb(253, 251, 251);"  id="skill">
     <h2>Skill</h2>
-    <Ol >
+    <Ol style="color: aquamarine;">
         <li>C programing</li>
         <li>C++
             <ul>
@@ -74,22 +91,24 @@
         <li>DSA</li>
         <li>git & github</li>
     </Ol>
-    <h3>skill progress </h3>
-    <label for="progress">html:</label>
+    <h2 style="color: rgb(255, 255, 255);">skill progress </h2>
+   <strong> <label style="color: rgb(188, 234, 234);" for="progress">html:</label></strong>
     <progress id="progress" value="40"max="100">40%</progress>
     </section>
     <section id="project">
-        <h2>Project</h2>
-        <ol>
+        <h2 style="color: rgb(230, 237, 240);">Project</h2>
+        <ol style="color: #030c01;">
            
             
-                <li> <a target="_blank" href="https://github.com/safatswe/Game_Project">snake game</a></li>
+                <li > <a target="_blank" href="https://github.com/safatswe/Game_Project"><strong style="color: rgb(119, 16, 16);">snake game</strong></a></li>
         
-            <li><a target="_blank" href="https://github.com/safatswe/Calculator">calculator</a></li>
-            <li><a target="_blank" href="https://github.com/safatswe/portfolio-html">portfolio-website</a></li>
+            <li ><a target="_blank" href="https://github.com/safatswe/Calculator"><strong style="color: rgb(119, 16, 16);">calculator</strong></a></li>
+            <li><a target="_blank" href="https://github.com/safatswe/portfolio-html"><strong style="color: rgb(119, 16, 16);">portfolio</strong></a></li>
         </ol>
-    <table border="1" cellpadding="5" cellspacing="0" >
-        <thead>
+       </section>
+       <section id="table">
+    <table border="1" cellpadding="5" cellspacing=3"  >
+        <thead style="color: rgb(247, 9, 9);">
             <tr>
                 <th>name</th>
                 <th>age</th>
@@ -98,7 +117,7 @@
             </tr>
            
         </thead>
-        <tbody>
+        <tbody style="color: aqua;">
             <tr>
                 <td>safat</td>
                 <td>23</td>
@@ -108,17 +127,40 @@
            
         </tbody>
     </table>
-   <strong><p>Form</p></strong> 
-   <form  action="https://formspree.io/f/mjkbnejv"
-   method="POST">
+    </section>
+    <section id="form">
+   <strong><p style="color: azure;">Form: please fillup the form</p></strong> 
+
+  <strong><em> <form  action="https://formspree.io/f/mjkbnejv"
+   method="POST" >
+   <fieldset>
+    <fieldset id="safat">
+
+       <strong><legend >personal information</legend></strong>
     <div> <label for="name">Name:</label>
         <input type="text" id="name" name="name" required> </div>
     <div> <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required></div>
+        <input type="email" id="email" name="email" ></div>
         <div>
-            <label for="number">age:</label>
-            <input type="number" id="number" min="18" required>
+            <label for="age">age:</label>
+            <input type="number" id="age" name="age" min="18" required>
 
+        </div>
+    </fieldset>
+   
+        <div>
+            <label for="color">favorite-color</label>
+            <input type="color" id="color" value="#fff000">
+        </div>
+        <div>
+            <lable for="programing">favorite programing language</lable>
+            <input list="language" id="programing">
+            <datalist id="language">
+                <option value="c">
+                </option>
+                <option value="c++"></option>
+                <option value="java"></option>
+            </datalist>
         </div>
       
 <div>
@@ -137,17 +179,18 @@
     <div>
         <label for="message">Message:</label> <br>
         <textarea name="message" id="message" cols="10" rows="10"></textarea></div>
-    <div>  <button type="submit">submit</button>
+    <div >  <button type="submit" >submit</button>
         <button type="reset">clear</button></div>
         
-   
+    </fieldset>
   </form>
+  </section><br>
   <div>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57967.30132355263!2d90.31428042167967!3d24.762686300000016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37564ed8606ffd87%3A0x1aedc83f62262e6b!2sGuhailkandi%20Dorga%20Jame%20Masjid!5e0!3m2!1sen!2sbd!4v1727638658846!5m2!1sen!2sbd" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57967.30132355263!2d90.31428042167967!3d24.762686300000016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37564ed8606ffd87%3A0x1aedc83f62262e6b!2sGuhailkandi%20Dorga%20Jame%20Masjid!5e0!3m2!1sen!2sbd!4v1727638658846!5m2!1sen!2sbd" width="300" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
   <footer>
-  <h3>Follow me</h3>
-  <ul>
+  <h2 style="color: aqua;">Follow me</h2>
+  <ul style="color: bisque;">
     <li> <a href="https://www.facebook.com/farabi.sinha.3"> <i class="fa-brands fa-facebook"></i>facebook_id</a></li>
     <li> <a href="https://youtu.be/honnseGzx28?si=FvU9JPDXsNqdU40E"> <i class="fa-brands fa-youtube">youtube</i></a></li>
   </ul>
